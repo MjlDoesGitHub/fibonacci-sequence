@@ -2,13 +2,13 @@
 
 void fibCount(int x)
 {
-    float fibOne{ 1 };
-    float fibTwo{ 1 };
+    unsigned long long fibOne{ 1 };
+    unsigned long long fibTwo{ 1 };
 
     for (int i = 0; i < x; i++)
     {
         std::cout << fibOne << '\n';
-        float sum{ fibOne + fibTwo };
+        unsigned long long sum{ fibOne + fibTwo };
         fibOne = fibTwo;
         fibTwo = sum;
     }
@@ -23,7 +23,7 @@ int main()
     return 0;
 }
 
-// fibbonacci sequence: 1 1 2 3 5 8 13 21 34...
+// fibonacci sequence: 1 1 2 3 5 8 13 21 34...
 
 /*
 * fibOne fibTwo sum
